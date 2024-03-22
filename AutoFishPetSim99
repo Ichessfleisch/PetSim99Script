@@ -12,7 +12,7 @@ end)
 --New tab 
 
 local Tab = Window:NewTab("Others")
-local Section = Tab:NewSection("New Tab section")
+local Section = Tab:NewSection("Sapphinx Hub")
 
 Section:NewToggle("Infinite Jump", "By toggling this you can jump infinitely.", function(state)    ---put your script to enabled true
     if state then                                                                                                                                              ---should be the same script
