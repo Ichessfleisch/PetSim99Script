@@ -3,7 +3,7 @@ local Window = Library.CreateLib("Sapphinx Hub", "BloodTheme")
 
 --New Tab
 
-local Tab = Window:NewTab("SapphinxHub")
+local Tab = Window:NewTab("Sapphinx Hub")
 local Section = Tab:NewSection("Main")
 
 Section:NewButton("Toggle Dupe", "ButtonInfo", function()
