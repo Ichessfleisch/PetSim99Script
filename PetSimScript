@@ -1,4 +1,9 @@
-local Tab = Window:NewTab("https://pastebin.com/raw/vff1bQ9F")
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("Sapphinx Hub", "BloodTheme")
+
+--New Tab
+
+local Tab = Window:NewTab("Sapphinx Hub")
 local Section = Tab:NewSection("Main")
 
 Section:NewButton("Toggle Pet Sim 99 Script", "ButtonInfo", function()
