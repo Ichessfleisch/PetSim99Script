@@ -7,7 +7,7 @@ local Tab = Window:NewTab("SapphinxHub")
 local Section = Tab:NewSection("Main")
 
 Section:NewButton("Toggle Dupe", "ButtonInfo", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/Ichessfleisch/script/main/Dupe'))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Ichessfleisch/PetSim99Script/main/DupeScript'))()
 end)
 
 Section:NewSlider("Walkspeed", "SliderInfo", 1000, 0, function(s) -- 1000 (MaxValue) | 0 (MinValue)
