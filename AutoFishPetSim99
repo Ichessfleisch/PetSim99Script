@@ -7,7 +7,7 @@ local Tab = Window:NewTab("Sapphinx Hub")
 local Section = Tab:NewSection("Main")
 
 Section:NewButton("Toggle Auto Fish", "ButtonInfo", unction()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/Ichessfleisch/script/main/AutoClawMachine'))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Ichessfleisch/script/main/autofish'))()
 end)
 Section:NewSlider("Walkspeed", "SliderInfo", 1000, 0, function(s) -- 1000 (MaxValue) | 0 (MinValue)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
