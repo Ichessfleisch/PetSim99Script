@@ -1,4 +1,4 @@
-local Tab = Window:NewTab("SapphinxHub")
+local Tab = Window:NewTab("https://pastebin.com/raw/vff1bQ9F")
 local Section = Tab:NewSection("Main")
 
 Section:NewButton("Toggle Pet Sim 99 Script", "ButtonInfo", function()
