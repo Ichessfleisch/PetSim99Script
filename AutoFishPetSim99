@@ -7,7 +7,7 @@ local Tab = Window:NewTab("Sapphinx Hub")
 local Section = Tab:NewSection("Main")
 
 Section:NewButton("Toggle Auto Fishing", "ButtonInfo", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/Ichessfleisch/PetSim99Script/main/AutoFishPetSim99'))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Ichessfleisch/PetSim99Script/main/autofish'))()
 end)
 
 Section:NewSlider("Walkspeed", "SliderInfo", 1000, 0, function(s) -- 1000 (MaxValue) | 0 (MinValue)
