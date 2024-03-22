@@ -6,7 +6,7 @@ local Window = Library.CreateLib("Sapphinx Hub", "BloodTheme")
 local Tab = Window:NewTab("Sapphinx Hub")
 local Section = Tab:NewSection("Main")
 
-Section:NewButton("Toggle Dupe", "ButtonInfo", function()
+Section:NewButton("Toggle Auto Fish", "ButtonInfo", function()
     loadstring(game:HttpGet('https://dpaste.com/EDLKBEB43.txt'))()
 end)
 
