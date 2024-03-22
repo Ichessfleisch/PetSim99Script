@@ -7,7 +7,6 @@ local Tab = Window:NewTab("Sapphinx Hub")
 local Section = Tab:NewSection("Main")
 
 Section:NewButton("Toggle Auto Fish", "ButtonInfo", function()
-    #MaxThreadsPerHotKey, 2
 Toggle := 0
  
 F1::
