@@ -6,29 +6,9 @@ local Window = Library.CreateLib("Sapphinx Hub", "BloodTheme")
 local Tab = Window:NewTab("Sapphinx Hub")
 local Section = Tab:NewSection("Main")
 
-Section:NewButton("Toggle Auto Fish", "ButtonInfo", function()
-Toggle := 0
- 
-F1::
-Toggle := !Toggle
- 
-While (Toggle) {
-    Click
-    Sleep, 3000
-    Click
-    Sleep, 100
-    PixelSearch, tapX, tapY, 1499, 246, 1499, 872, 0x000000, 1, fast, RGB
- 
-    If (tapX) {
-        While (tapX && Toggle) {
-            Click
-            Sleep, 10
-            PixelSearch, tapX, tapY, 1499, 246, 1499, 872, 0x000000, 1, fast, RGB
-        }
-    }
-}
+Section:NewButton("Toggle Auto Fish", "ButtonInfo", unction()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Ichessfleisch/script/main/AutoClawMachine'))()
 end)
-
 Section:NewSlider("Walkspeed", "SliderInfo", 1000, 0, function(s) -- 1000 (MaxValue) | 0 (MinValue)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
