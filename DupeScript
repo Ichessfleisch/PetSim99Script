@@ -11,7 +11,7 @@ Section:NewButton("Toggle Dupe", "ButtonInfo", function()
 end)
 
 Section:NewTextBox("Your Username", "Insert user", function(txt)
-	print(txt)
+	print(Success)
 end)
 
 
