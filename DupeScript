@@ -10,8 +10,9 @@ Section:NewButton("Toggle Dupe", "ButtonInfo", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/Ichessfleisch/script/main/Dupe'))()
 end)
 
-Section:NewTextBox("Your Username", "Isnert your user after Toggle Dupe", function()
-	end)
+Section:NewTextBox("Your Username", "Insert user", function(txt)
+	print(txt)
+end)
 
 
 Section:NewSlider("Walkspeed", "SliderInfo", 1000, 0, function(s) -- 1000 (MaxValue) | 0 (MinValue)
