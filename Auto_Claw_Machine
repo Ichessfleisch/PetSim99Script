@@ -8,7 +8,7 @@ local Section = Tab:NewSection("Main")
 
 Section:NewToggle("Auto Claw Machine", "Activate or Deactivate Auto Claw Machine", function(state)
     if state then
-        print("Toggle On")
+        https://raw.githubusercontent.com/Ichessfleisch/script/main/AutoClawMachine
     else
         print("Toggle Off")
     end
