@@ -6,13 +6,23 @@ local Window = Library.CreateLib("Sapphinx Hub", "DarkTheme")
 local Tab = Window:NewTab("Sapphinx Hub")
 local Section = Tab:NewSection("Main")
 
-Section:NewButton("Toggle Auto Claw Machine", "ButtonInfo", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/Ichessfleisch/script/main/AutoClawMachine'))()
+Section:NewToggle("Auto Claw Machine", "Activate or Deactivate Auto Claw Machine", function(state)
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
 end)
 
-Section:NewSlider("Walkspeed", "SliderInfo", 1000, 0, function(s) -- 1000 (MaxValue) | 0 (MinValue)
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+Section:NewTextBox("Highest Egg in Claw Machine (20x,50x)", "Insert Highest Egg", function(txt)
+	print(Success)
 end)
+
+Section:NewButton("Save", "Save", function(txt)
+    print(success)
+end)
+
+
 
 --New tab 
 
