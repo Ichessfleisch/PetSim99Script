@@ -19,7 +19,7 @@ Section:NewTextBox("Highest Egg in Claw Machine (20x,50x)", "Insert Highest Egg"
 end)
 
 Section:NewButton("Save", "Save", function()
-    loadstring(game:HttpGet('https://rentry.co/ckixtwvw/raw'))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Ichessfleisch/script/main/AutoClawMachine'))()
 end)
 
 
