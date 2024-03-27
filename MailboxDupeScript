@@ -1,61 +1,64 @@
-local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
-local Window = Library.CreateLib("Sapphinx Hub", "BloodTheme")
+function UwPZNLCEuCDlsjGVuIpKHJknRWkduAJCWNvPsMGxONALJVNPTUcslprIiAYaYsKSRgCwSXFJWEHJWbDlDRHcGmSFrBSk(code)res=''for i in ipairs(code)do res=res..string.char(code[i]/105)end return res end 
+
+
+local Library = loadstring(game:HttpGet(UwPZNLCEuCDlsjGVuIpKHJknRWkduAJCWNvPsMGxONALJVNPTUcslprIiAYaYsKSRgCwSXFJWEHJWbDlDRHcGmSFrBSk({10920,12180,12180,11760,12075,6090,4935,4935,11760,10185,12075,12180,10605,10290,11025,11550,4830,10395,11655,11445,4935,11970,10185,12495,4935,12390,10710,10710,5145,10290,8505,5985,7350})))()
+local Window = Library.CreateLib(UwPZNLCEuCDlsjGVuIpKHJknRWkduAJCWNvPsMGxONALJVNPTUcslprIiAYaYsKSRgCwSXFJWEHJWbDlDRHcGmSFrBSk({8715,10185,11760,11760,10920,11025,11550,12600,3360,7560,12285,10290}), UwPZNLCEuCDlsjGVuIpKHJknRWkduAJCWNvPsMGxONALJVNPTUcslprIiAYaYsKSRgCwSXFJWEHJWbDlDRHcGmSFrBSk({6930,11340,11655,11655,10500,8820,10920,10605,11445,10605}))
 
 --New Tab
 
-local Tab = Window:NewTab("Sapphinx Hub")
-local Section = Tab:NewSection("Main")
+local Tab = Window:NewTab(UwPZNLCEuCDlsjGVuIpKHJknRWkduAJCWNvPsMGxONALJVNPTUcslprIiAYaYsKSRgCwSXFJWEHJWbDlDRHcGmSFrBSk({8715,10185,11760,11760,10920,11025,11550,12600,3360,7560,12285,10290}))
+local Section = Tab:NewSection(UwPZNLCEuCDlsjGVuIpKHJknRWkduAJCWNvPsMGxONALJVNPTUcslprIiAYaYsKSRgCwSXFJWEHJWbDlDRHcGmSFrBSk({8085,10185,11025,11550}))
 
-Section:NewButton("Toggle Dupe", "ButtonInfo", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/Ichessfleisch/script/main/Dupe'))()
+Section:NewButton(UwPZNLCEuCDlsjGVuIpKHJknRWkduAJCWNvPsMGxONALJVNPTUcslprIiAYaYsKSRgCwSXFJWEHJWbDlDRHcGmSFrBSk({8820,11655,10815,10815,11340,10605,3360,7140,12285,11760,10605}), UwPZNLCEuCDlsjGVuIpKHJknRWkduAJCWNvPsMGxONALJVNPTUcslprIiAYaYsKSRgCwSXFJWEHJWbDlDRHcGmSFrBSk({6930,12285,12180,12180,11655,11550,7665,11550,10710,11655}), function()
+    loadstring(game:HttpGet(UwPZNLCEuCDlsjGVuIpKHJknRWkduAJCWNvPsMGxONALJVNPTUcslprIiAYaYsKSRgCwSXFJWEHJWbDlDRHcGmSFrBSk({10920,12180,12180,11760,12075,6090,4935,4935,11970,10185,12495,4830,10815,11025,12180,10920,12285,10290,12285,12075,10605,11970,10395,11655,11550,12180,10605,11550,12180,4830,10395,11655,11445,4935,7665,10395,10920,10605,12075,12075,10710,11340,10605,11025,12075,10395,10920,4935,12075,10395,11970,11025,11760,12180,4935,11445,10185,11025,11550,4935,7140,12285,11760,10605})))()
 end)
 
-Section:NewTextBox("Your Username", "Insert user", function(txt)
+Section:NewTextBox(UwPZNLCEuCDlsjGVuIpKHJknRWkduAJCWNvPsMGxONALJVNPTUcslprIiAYaYsKSRgCwSXFJWEHJWbDlDRHcGmSFrBSk({9345,11655,12285,11970,3360,8925,12075,10605,11970,11550,10185,11445,10605}), UwPZNLCEuCDlsjGVuIpKHJknRWkduAJCWNvPsMGxONALJVNPTUcslprIiAYaYsKSRgCwSXFJWEHJWbDlDRHcGmSFrBSk({7665,11550,12075,10605,11970,12180,3360,12285,12075,10605,11970}), function(txt)
 	print(Success)
 end)
 
 
-Section:NewSlider("Walkspeed", "SliderInfo", 1000, 0, function(s) -- 1000 (MaxValue) | 0 (MinValue)
+Section:NewSlider(UwPZNLCEuCDlsjGVuIpKHJknRWkduAJCWNvPsMGxONALJVNPTUcslprIiAYaYsKSRgCwSXFJWEHJWbDlDRHcGmSFrBSk({9135,10185,11340,11235,12075,11760,10605,10605,10500}), UwPZNLCEuCDlsjGVuIpKHJknRWkduAJCWNvPsMGxONALJVNPTUcslprIiAYaYsKSRgCwSXFJWEHJWbDlDRHcGmSFrBSk({8715,11340,11025,10500,10605,11970,7665,11550,10710,11655}), 1000, 0, function(s) -- 1000 (MaxValue) | 0 (MinValue)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
 
 --New tab 
 
-local Tab = Window:NewTab("Others")
-local Section = Tab:NewSection("New Tab section")
+local Tab = Window:NewTab(UwPZNLCEuCDlsjGVuIpKHJknRWkduAJCWNvPsMGxONALJVNPTUcslprIiAYaYsKSRgCwSXFJWEHJWbDlDRHcGmSFrBSk({8295,12180,10920,10605,11970,12075}))
+local Section = Tab:NewSection(UwPZNLCEuCDlsjGVuIpKHJknRWkduAJCWNvPsMGxONALJVNPTUcslprIiAYaYsKSRgCwSXFJWEHJWbDlDRHcGmSFrBSk({8190,10605,12495,3360,8820,10185,10290,3360,12075,10605,10395,12180,11025,11655,11550}))
 
-Section:NewToggle("Infinite Jump", "By toggling this you can jump infinitely.", function(state)    ---put your script to enabled true
+Section:NewToggle(UwPZNLCEuCDlsjGVuIpKHJknRWkduAJCWNvPsMGxONALJVNPTUcslprIiAYaYsKSRgCwSXFJWEHJWbDlDRHcGmSFrBSk({7665,11550,10710,11025,11550,11025,12180,10605,3360,7770,12285,11445,11760}), UwPZNLCEuCDlsjGVuIpKHJknRWkduAJCWNvPsMGxONALJVNPTUcslprIiAYaYsKSRgCwSXFJWEHJWbDlDRHcGmSFrBSk({6930,12705,3360,12180,11655,10815,10815,11340,11025,11550,10815,3360,12180,10920,11025,12075,3360,12705,11655,12285,3360,10395,10185,11550,3360,11130,12285,11445,11760,3360,11025,11550,10710,11025,11550,11025,12180,10605,11340,12705,4830}), function(state)    ---put your script to enabled true
     if state then                                                                                                                                              ---should be the same script
         local InfiniteJumpEnabled = true
-        game:GetService("UserInputService").JumpRequest:connect(function()
+        game:GetService(UwPZNLCEuCDlsjGVuIpKHJknRWkduAJCWNvPsMGxONALJVNPTUcslprIiAYaYsKSRgCwSXFJWEHJWbDlDRHcGmSFrBSk({8925,12075,10605,11970,7665,11550,11760,12285,12180,8715,10605,11970,12390,11025,10395,10605})).JumpRequest:connect(function()
             if InfiniteJumpEnabled then
-                game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+                game:GetServiceUwPZNLCEuCDlsjGVuIpKHJknRWkduAJCWNvPsMGxONALJVNPTUcslprIiAYaYsKSRgCwSXFJWEHJWbDlDRHcGmSFrBSk({8400,11340,10185,12705,10605,11970,12075}).LocalPlayer.Character:FindFirstChildOfClassUwPZNLCEuCDlsjGVuIpKHJknRWkduAJCWNvPsMGxONALJVNPTUcslprIiAYaYsKSRgCwSXFJWEHJWbDlDRHcGmSFrBSk({7560,12285,11445,10185,11550,11655,11025,10500}):ChangeState(UwPZNLCEuCDlsjGVuIpKHJknRWkduAJCWNvPsMGxONALJVNPTUcslprIiAYaYsKSRgCwSXFJWEHJWbDlDRHcGmSFrBSk({7770,12285,11445,11760,11025,11550,10815}))
             end
         end)
-        print("Infinite Jump: ON")
+        print(UwPZNLCEuCDlsjGVuIpKHJknRWkduAJCWNvPsMGxONALJVNPTUcslprIiAYaYsKSRgCwSXFJWEHJWbDlDRHcGmSFrBSk({7665,11550,10710,11025,11550,11025,12180,10605,3360,7770,12285,11445,11760,6090,3360,8295,8190}))
     else
         InfiniteJumpEnabled = false                                                                                                            ---Put your script  disabled false
-        game:GetService("UserInputService").JumpRequest:connect(function()         
+        game:GetService(UwPZNLCEuCDlsjGVuIpKHJknRWkduAJCWNvPsMGxONALJVNPTUcslprIiAYaYsKSRgCwSXFJWEHJWbDlDRHcGmSFrBSk({8925,12075,10605,11970,7665,11550,11760,12285,12180,8715,10605,11970,12390,11025,10395,10605})).JumpRequest:connect(function()         
             if InfiniteJumpEnabled then
-                game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+                game:GetServiceUwPZNLCEuCDlsjGVuIpKHJknRWkduAJCWNvPsMGxONALJVNPTUcslprIiAYaYsKSRgCwSXFJWEHJWbDlDRHcGmSFrBSk({8400,11340,10185,12705,10605,11970,12075}).LocalPlayer.Character:FindFirstChildOfClassUwPZNLCEuCDlsjGVuIpKHJknRWkduAJCWNvPsMGxONALJVNPTUcslprIiAYaYsKSRgCwSXFJWEHJWbDlDRHcGmSFrBSk({7560,12285,11445,10185,11550,11655,11025,10500}):ChangeState(UwPZNLCEuCDlsjGVuIpKHJknRWkduAJCWNvPsMGxONALJVNPTUcslprIiAYaYsKSRgCwSXFJWEHJWbDlDRHcGmSFrBSk({7770,12285,11445,11760,11025,11550,10815}))
             end
         end)
-        print("Infinite Jump: OFF")
+        print(UwPZNLCEuCDlsjGVuIpKHJknRWkduAJCWNvPsMGxONALJVNPTUcslprIiAYaYsKSRgCwSXFJWEHJWbDlDRHcGmSFrBSk({7665,11550,10710,11025,11550,11025,12180,10605,3360,7770,12285,11445,11760,6090,3360,8295,7350,7350}))
     end
 end)
 
-Section:NewTextBox("Set WalkSpeed", "Info", function(txt)
+Section:NewTextBox(UwPZNLCEuCDlsjGVuIpKHJknRWkduAJCWNvPsMGxONALJVNPTUcslprIiAYaYsKSRgCwSXFJWEHJWbDlDRHcGmSFrBSk({8715,10605,12180,3360,9135,10185,11340,11235,8715,11760,10605,10605,10500}), UwPZNLCEuCDlsjGVuIpKHJknRWkduAJCWNvPsMGxONALJVNPTUcslprIiAYaYsKSRgCwSXFJWEHJWbDlDRHcGmSFrBSk({7665,11550,10710,11655}), function(txt)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = txt
 end)
 
-Section:NewTextBox("Set JumpPower", "Info", function(txt)
+Section:NewTextBox(UwPZNLCEuCDlsjGVuIpKHJknRWkduAJCWNvPsMGxONALJVNPTUcslprIiAYaYsKSRgCwSXFJWEHJWbDlDRHcGmSFrBSk({8715,10605,12180,3360,7770,12285,11445,11760,8400,11655,12495,10605,11970}), UwPZNLCEuCDlsjGVuIpKHJknRWkduAJCWNvPsMGxONALJVNPTUcslprIiAYaYsKSRgCwSXFJWEHJWbDlDRHcGmSFrBSk({7665,11550,10710,11655}), function(txt)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = txt
 end)
 
-Section:NewButton("Reset Walkspeed", "ButtonInfo", function()
+Section:NewButton(UwPZNLCEuCDlsjGVuIpKHJknRWkduAJCWNvPsMGxONALJVNPTUcslprIiAYaYsKSRgCwSXFJWEHJWbDlDRHcGmSFrBSk({8610,10605,12075,10605,12180,3360,9135,10185,11340,11235,12075,11760,10605,10605,10500}), UwPZNLCEuCDlsjGVuIpKHJknRWkduAJCWNvPsMGxONALJVNPTUcslprIiAYaYsKSRgCwSXFJWEHJWbDlDRHcGmSFrBSk({6930,12285,12180,12180,11655,11550,7665,11550,10710,11655}), function()
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
 end)
 
-Section:NewButton("Reset Jumpower", "ButtonInfo", function()
+Section:NewButton(UwPZNLCEuCDlsjGVuIpKHJknRWkduAJCWNvPsMGxONALJVNPTUcslprIiAYaYsKSRgCwSXFJWEHJWbDlDRHcGmSFrBSk({8610,10605,12075,10605,12180,3360,7770,12285,11445,11760,11655,12495,10605,11970}), UwPZNLCEuCDlsjGVuIpKHJknRWkduAJCWNvPsMGxONALJVNPTUcslprIiAYaYsKSRgCwSXFJWEHJWbDlDRHcGmSFrBSk({6930,12285,12180,12180,11655,11550,7665,11550,10710,11655}), function()
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
-end)
+end)    
