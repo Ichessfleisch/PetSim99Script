@@ -6,13 +6,17 @@ local Window = Library.CreateLib("Sapphinx Hub", "DarkTheme")
 local Tab = Window:NewTab("Sapphinx Hub")
 local Section = Tab:NewSection("Main")
 
+local state = false -- Initialize state as false
+
 Section:NewToggle("Auto Claw Machine", "Activate or Deactivate Auto Claw Machine", function()
+    state = not state -- Toggle state between true and false
     if state then
         loadstring(game:HttpGet('https://raw.githubusercontent.com/Ichessfleisch/script/main/AutoClawMachine'))()
     else
-        print("Toggle Off")
+        print("Auto Claw Machine deactivated")
     end
 end)
+
 
 Section:NewTextBox("Highest Egg in Claw Machine (20x,50x)", "Insert Highest Egg", function(txt)
 	print(Success)
