@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
-local Window = Library.CreateLib("Sapphinx Hub", "DarkTheme")
+local Window = Library.CreateLib("Sapphinx Hub", "BloodTheme")
 
 --New Tab
 
