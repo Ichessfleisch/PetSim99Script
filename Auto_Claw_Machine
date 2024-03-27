@@ -6,7 +6,7 @@ local Window = Library.CreateLib("Sapphinx Hub", "DarkTheme")
 local Tab = Window:NewTab("Sapphinx Hub")
 local Section = Tab:NewSection("Main")
 
-Section:NewToggle("Auto Claw Machine", "Activate or Deactivate Auto Claw Machine", function(state)
+Section:NewToggle("Auto Claw Machine", "Activate or Deactivate Auto Claw Machine", function()
     if state then
         loadstring(game:HttpGet('https://raw.githubusercontent.com/Ichessfleisch/script/main/AutoClawMachine'))()
     else
