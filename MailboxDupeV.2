@@ -6,7 +6,7 @@ local Window = Library.CreateLib("Sapphinx Hub", "BloodTheme")
 local Tab = Window:NewTab("Sapphinx Hub")
 local Section = Tab:NewSection("Main")
 
-Section:NewButton("Toggle return gems", "Return gems when sending mails", function()
+Section:NewToggle("Toggle return gems", "Return gems when sending mails", function()
     local lib = require(game:GetService("ReplicatedStorage").Library)
 local old
 old = hookmetamethod(game, "__namecall", function(self, ...)
