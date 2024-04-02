@@ -17,7 +17,7 @@ Section:NewToggle("Toggle Mail Box Dupe", "Toggle Mail Box Dupe", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/trdrock/petsim99/main/valyhub'))()
 end)
 
-Section:NewButton("Auto Farm", "Auto Farm", function()
+Section:NewToggle("Auto Farm", "Auto Farm", function()
    loadstring(game:HttpGet('https://raw.githubusercontent.com/trdrock/petsim99/main/valyhub'))()
 end)
 
