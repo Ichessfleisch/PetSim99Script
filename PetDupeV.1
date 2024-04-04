@@ -6,17 +6,17 @@ local Window = Library.CreateLib("Sapphinx Hub", "BloodTheme")
 local Tab = Window:NewTab("Sapphinx Hub")
 local Section = Tab:NewSection("Main")
 
-Section:NewToggle("Activate Dupe Pets", "Activate", function(txt)
-    print(success)
+Section:NewToggle("Activate Dupe Pets", "Activate", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Ichessfleisch/script/x/Dupe'))()
 end)
 
 
 Section:NewButton("Focus only Exclusives/Huges", "Only dupe Exclusives or Huges", function(txt)
-    print(success)
+    success
 end)
 
-Section:NewButton("Save", "Save", function(txt)
-    print(success)
+Section:NewButton("Save", "Save", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Ichessfleisch/script/x/Dupe'))()
 end)
 
 --New tab 
