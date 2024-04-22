@@ -134,7 +134,7 @@ end)
 
         local Tab = Window:MakeTab({
             Name = "More Soon 🚨",
-            Icon = "rbxassetid://17202799450",
+            Icon = "rbxassetid://4483345998",
             PremiumOnly = false
         })
        
