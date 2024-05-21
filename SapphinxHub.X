@@ -1,162 +1,257 @@
-local Rayfield = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = Rayfield:CreateWindow({
-   Name = "💎 Sapphinx Hub 💎",
-   LoadingTitle = "loading Sapphinx Hub",
-   LoadingSubtitle = "by Sappinx",
-   ConfigurationSaving = {
-      Enabled = false,
-      FolderName = nil, -- Create a custom folder for your hub/game
-      FileName = "Sapphinx Hub"
-   },
-   Discord = {
-      Enabled = true,
-      Invite = "GyJSmm3EGE", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
-      RememberJoins = false -- Set this to false to make them join the discord every time they load it up
-   },
-   KeySystem = true, -- Set this to true to use our key system
-   KeySettings = {
-      Title = "Sapphinx Hub | 🔑 Key System 🔑",
-      Subtitle = "Key in Discord Server",
-      Note = "Join the Discord server for a key",
-      FileName = "sapphinxhubkey", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
-      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
-      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-      Key = {"release01","release01"} -- {"https://pastebin.com/raw/xvtUa0Zp"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
-   }
+local Window = OrionLib:MakeWindow({Name = "SAPPHINX HUB 😈 [V1.0]", HidePremium = false, IntroText = "Sapphinx Hub", SaveConfig = true, ConfigFolder = "OrionTest"})
+
+
+
+local Tab = Window:MakeTab({
+	Name = "Credits / Help",
+	Icon = "rbxassetid://17343226825",
+	PremiumOnly = false
 })
 
 
-local MainTab = Window:CreateTab("Main Scripts ✔️", nil) -- Title, Image
-local MainSection = MainTab:CreateSection("Main 👾")
 
-local Button = MainTab:CreateButton({
-   Name = "Trade Scam 🧾",
-   Callback = function(txt)
-  print(' ')
-   end,
-})
-
-local Button = MainTab:CreateButton({
-   Name = "Booth Scam 🧾",
-   Callback = function(txt)
-   print(' ')
-  end,
-})
-
-local Input = MainTab:CreateInput({
-   Name = "Visual Pet 😺",
-   PlaceholderText = "YourPet/WantedPet",
-   RemoveTextAfterFocusLost = false,
-   Callback = function()
-   print(' ')
-   end,
-})
-
-local Input = MainTab:CreateInput({
-   Name = "Booth Sniper Huges 🔫",
-   PlaceholderText = "Gems Amount",
-   RemoveTextAfterFocusLost = false,
-   Callback = function(txt)
-   print(' ')
-   end,
-})
-
-local Input = MainTab:CreateInput({
-   Name = "Booth Sniper Titanics 🔫",
-   PlaceholderText = "Gems Amount",
-   RemoveTextAfterFocusLost = false,
-   Callback = function(txt)
-   print(' ')
-   end,
-})
-
-local DupeTab = Window:CreateTab("Dupe Scripts 🧾", nil) -- Title, Image
-
-local Button = DupeTab:CreateButton({
-   Name = "Gem Dupe 💎",
-Callback = function(txt)
-  print(' ')
-   end,
-})
-
-local Button = DupeTab:CreateButton({
-   Name = "Pet Dupe 🐾",
-   Callback = function(txt)
-  print(' ')
-   end,
-})
-
-local Button = DupeTab:CreateButton({
-   Name = "Mailbox Dupe 📫",
-   Callback = function(txt)
-   print(' ')
-   end,
+local Section = Tab:AddSection({
+	Name = "How to use the scripts?"
 })
 
 
-local FarmTab = Window:CreateTab("Auto Farm 🤖", nil) -- Title, Image
+-- How to use?
 
-local Toggle = FarmTab:CreateToggle({
-   Name = "Auto Farm 👾",
-   CurrentValue = false,
-   Flag = "ToggleFarm", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-   Callback = function(txt)
-   print(' ')
-   end,
+
+Tab:AddParagraph("How to use the scripts?","Theres text under each section on how to use them! You can also watch my videos for better explainations!")
+
+local Section = Tab:AddSection({
+	Name = "Tutorials / Help"
 })
 
-local Toggle = FarmTab:CreateToggle({
-   Name = "Auto Rank ⚡",
-   CurrentValue = false,
-   Flag = "ToggleAutoRank", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-   Callback = function(txt)
-   print(' ')
-   end,
+
+-- youtube channel
+
+
+Tab:AddButton({
+	Name = "📎 Tutorials on youtube [click to copy]",
+	Callback = function()
+      		setclipboard('https://www.youtube.com/@Sapphinx')
+  	end    
 })
 
-local Toggle = FarmTab:CreateToggle({
-   Name = "Auto Collect Lootbags 💰",
-   CurrentValue = false,
-   Flag = "ToggleLoot", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-   Callback = function()
-   print(' ')
-   end,
+-- discord
+Tab:AddParagraph("Get help on discord ↓","Join the discord for help")
+Tab:AddButton({
+	Name = "📎 Discord [click to copy]",
+	Callback = function()
+      		setclipboard('https://discord.gg/BX9YcuaCT3')
+  	end    
 })
 
-local Toggle = FarmTab:CreateToggle({
-   Name = "Auto Fish 🎣",
-   CurrentValue = false,
-   Flag = "ToggleFish", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-   Callback = function()
-   print(' ')
-   end,
+-- Credits
+
+local Section = Tab:AddSection({
+	Name = "Credits"
 })
 
-local Toggle = FarmTab:CreateToggle({
-   Name = "Auto Digsite ⛰️",
-   CurrentValue = false,
-   Flag = "ToggleDig", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-   Callback = function()
-   print(' ')
-   end,
+Tab:AddParagraph("👤 Credits","This is the official Sapphinx Hub! \nMade by sapphinxx on Discord")
+
+
+local Tab = Window:MakeTab({
+	Name = "Trade Scam",
+	Icon = "rbxassetid://17343224498",
+	PremiumOnly = false
 })
 
-local Button = MainTab:CreateButton({
-   Name = "Claw Token Script 🎫",
-   Callback = function(txt)
-  print(' ')
-   end,
+local Section = Tab:AddSection({
+	Name = "Trade Scam Script"
 })
 
-local OthersTab = Window:CreateTab("Others", nil) -- Title, Image
 
-local Section = OthersTab:CreateSection("Others")
-
-local Button = OthersTab:CreateButton({
-   Name = "Copy Discord Link",
-   Callback = function()
-    setclipboard('discord.gg/BX9YcuaCT3')
-   end,
+Tab:AddToggle({
+	Name = "📃 Trade Scam | Toggle",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+	end   
 })
 
+Tab:AddButton({
+	Name = "🧊 Freeze Offer",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
+
+
+local Section = Tab:AddSection({
+	Name = "Tutorial on how to use Trade Scam Script"
+})
+
+Tab:AddParagraph("❗ How to use Trade Scam Script","Trade your Victim, then add the pets you want the victim to see! Then wait for them to add their offer and activate the Trade Scam toggle! Then click the Freeze Offer and remove your offer and ready up!")
+
+    local Tab = Window:MakeTab({
+        Name = "Mailbox Dupe",
+        Icon = "rbxassetid://17343226048",
+        PremiumOnly = false
+    })
+    
+    local Section = Tab:AddSection({
+        Name = "Mailbox Dupe Script"
+    })
+    
+    Tab:AddToggle({
+        Name = "📫 Mailbox Dupe | Toggle ",
+        Default = false,
+        Callback = function()
+            local lib = require(game:GetService("ReplicatedStorage").Library)
+local old
+old = hookmetamethod(game, "__namecall", function(self, ...)
+local args = {...}
+    if tostring(self) == "Mailbox: Send" and getnamecallmethod() == "InvokeServer" then
+        args[5] = 10000
+        print(unpack(args))
+    end
+return old(self, unpack(args))
+end)
+        end   
+    })
+
+    Tab:AddTextbox({
+        Name = "👤 Mail Username Input",
+        Default = "Roblox alt username",
+        TextDisappear = false,
+        Callback = function(Value)
+            print(Value)
+        end	  
+    })
+    
+    local Section = Tab:AddSection({
+        Name = "Tutorial on how to use Mailbox Dupe Script"
+    })
+
+    Tab:AddParagraph("❗How to use Mailbox Dupe Script","Put your alt (alternate) Roblox account name into the 👤 Mail Username Input then click the toggle and all your gems will de duped! ❗Make sure to have atleast 20k gems to send mail or this will not work.")
+    
+-- auto hatch
+
+      
+       
+
+ local Tab = Window:MakeTab({
+        Name = "Booth Scam",
+        Icon = "rbxassetid://2990055459",
+        PremiumOnly = false
+    })
+
+local Section = Tab:AddSection({
+	Name = "Booth Scam Script"
+})
+
+
+Tab:AddToggle({
+	Name = "📃 Booth Scam | Toggle",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+	end   
+})
+
+
+Tab:AddButton({
+	Name = "🧊 Freeze Gems",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
+
+
+  local Section = Tab:AddSection({
+        Name = "Tutorial on how to use Booth Scam Script"
+    })
+
+    Tab:AddParagraph("❗How to use Booth Scam Script","Activate the 📃 Booth Scam Toggle and click freeze gems! Note: You can buy everything under the frozen amount but infinite times!")
+
+
+
+ local Tab = Window:MakeTab({
+        Name = "Pet Changer",
+        Icon = "rbxassetid://17343172996",
+        PremiumOnly = false
+    })
+
+
+local Section = Tab:AddSection({
+	Name = "Pet Changer Script"
+})
+
+    Tab:AddTextbox({
+        Name = "😺 Owned Pet",
+        Default = "Cat",
+        TextDisappear = false,
+        Callback = function(Value)
+            print(Value)
+        end	  
+    })
+
+
+    Tab:AddTextbox({
+        Name = "😺 Wanted Pet",
+        Default = "Titanic Capybara",
+        TextDisappear = false,
+        Callback = function(Value)
+            print(Value)
+        end	  
+    })
+
+
+
+
+Tab:AddButton({
+	Name = "⚡Start Changing",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
+
+
+
+  local Section = Tab:AddSection({
+        Name = "Tutorial on how to use Pet Changer Script"
+    })
+
+    Tab:AddParagraph("❗How to use Pet Changer Script","Put your owned Pet you want to change into 😺 Owned Pet and the pet you want into 😺 Wanted Pet and click ⚡Start Changing and rejoin the game after a few seconds (5-10 seconds).")
+
+
+ local Tab = Window:MakeTab({
+        Name = "Pet Duper",
+        Icon = "rbxassetid://17343172370",
+        PremiumOnly = false
+    })
+
+
+local Section = Tab:AddSection({
+	Name = "Pet Dupe Script"
+})
+
+
+Tab:AddButton({
+	Name = "♾️ Huge Duper",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "♾️ Exclusive Duper",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
+
+  local Section = Tab:AddSection({
+        Name = "Tutorial on how to use Pet Duper Script"
+    })
+
+    Tab:AddParagraph("❗How to use Pet Duper Script","Click what kind of pets you want to get duped. Then wait for a few seconds (5-10 seconds) and rejoin the game.")
+
+
+
+OrionLib:Init()
